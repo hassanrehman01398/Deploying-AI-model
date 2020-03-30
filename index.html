@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/gh/nicolaspanel/numjs@0.15.1/dist/numjs.min.js"
+
+  ></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.5"></script>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   
+  
+    <script
+        src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/utils.js"></script>
+    <script async src="js/opencv.js" onload="openCvReady();"></script>
+  
+   <style>
+        #cam_input
+{
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
+
+#canvas_output
+{
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Face Detection</h1>
+                </div>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+
+    
+    <!-- <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Face Detection</h1>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="row">
+          <div class="col text-center">
+           
+           <video autoplay style="display: none;" id="cam_input" height="100" width="100"></video>
+           <canvas style="width: 300px;height: 300px;" id="canvas_output">
+            <script src="script.js"></script>
+            <canvas id="canvasid1" width="800" height="600"></canvas>
+
+          </div>
+        </div>
+      </div>
+  
+
+    <p></p>
+  
+    
+    <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <!-- <button class="btn btn-default">Centered button</button> -->
+            <button type="button" class="btn btn-primary btn-lg">Press Me</button>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+
+
+    </body>
+
+
+</html>
