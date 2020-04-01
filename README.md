@@ -6,3 +6,5 @@ To test this copy or clone all the files with same directory structure and serve
 e.g:
 
 $ python -m http.server
+# Demo 
+https://cs230-fer.firebaseapp.com/
